@@ -1,0 +1,90 @@
+<html>
+<head></head>
+<style>
+    body
+{
+	background-image:url('https://wallpapercave.com/wp/wp4955575.jpg');
+	background-size:cover;
+	background-position: center;
+}
+.headerwelcome
+{
+	size:30px;
+	color:red;
+}
+.logo
+{
+	height:150px;
+	width:150px;
+} 
+.logo2
+{
+	height:50px;
+	width:50px;
+	margin-left:100px;
+} 
+.main
+{
+	background-image:url('backgroundimage.jpg');
+	height:230px;
+	width:100%;
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+.usernm
+{
+	margin-left:1400px;
+	margin-top:-20px;
+}
+table {
+  border-collapse: collapse;
+  margin-left:150px;
+  margin-top:-150px;
+}
+
+thead th {
+  width: 200px;
+  background-color: #ff8080;
+   border: 1px solid white;
+}
+th, td {
+    border: 1px solid #ff8080;
+    padding: 8px;
+	color:#fffdfd
+}
+.datepic
+{ background-color: #ff9999;
+		height:20px;
+        width:150px;  
+        color:white;   
+        padding: 15px;   
+        margin: 10px 0px;   
+        border: none;   
+        cursor: pointer; 
+	
+}
+</style>
+{% include "Header.html" %}
+<body>
+
+            <br><br><br><br><br><br><br><br>
+			<center><table>
+			  <caption>Student Attendance List </caption></br>
+			  <thead>
+				<tr>
+				  <th>Student Roll NO</th>
+				  <th>lecture</th>
+				  <th>date</th>
+				  <th>Status</th>
+				</tr></br>
+			  </thead>
+				<tr>
+				<td></td>
+				<td><?php echo $row['lecture'];?></td>
+				<td><?php echo $row['date'];?></td>
+				<td><?php echo $row['status'];?></td>
+				</tr></br>			
+	</tbody>
+	</table></center>
+</body>
+</html>

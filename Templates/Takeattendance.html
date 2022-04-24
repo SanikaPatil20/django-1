@@ -1,0 +1,120 @@
+<html>
+<head></head>
+<style>
+body
+{
+	background-image:url('https://wallpapercave.com/wp/wp4955575.jpg');
+	background-size:cover;
+	background-position: center;
+}
+.head
+{
+	font-size:30px;
+	color:rgb(199, 63, 110);
+}
+.logo
+{
+	height:150px;
+	width:150px;
+	
+} 
+.logo2
+{
+	height:50px;
+	width:50px;
+	margin-left:100px;
+} 
+.main
+{
+	background-image:url('backgroundimage.jpg');
+	height:230px;
+	width:100%;
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+.usernm
+{
+	margin-left:1400px;
+	margin-top:-20px;
+}
+table {
+  border-collapse: collapse;
+  margin-left: -265px;
+  
+}
+
+thead th {
+  width: 20%;
+  background-color: #ff8080;
+   border: 1px solid white;
+   color:aliceblue
+}
+th, td 
+{
+    border: 1px solid #ff8080;
+    padding: 8px;
+	color:#ff8080;
+}
+.datepic
+{ 
+    background-color:#ff8080;
+	height:50px;
+    width:40%;  
+    color:white;   
+    padding:15px;   
+    margin:10px 0px;   
+    border:none;   
+    cursor:pointer; 
+    float:left;
+    margin-left: 20px;
+	
+}
+.submit
+{
+    background-color: #ff4d4d;   
+        width: 200px;  
+        color: white;   
+        padding: 15px;   
+        margin-top: 30px; 
+        border : none;
+		border-radius:10px;
+        margin-left:-250px;
+}
+</style>
+<body>
+
+    {% include "Header.html" %}
+</div>
+<center>
+<form action="takeattendance.php" method="post">
+<div>
+<input type="date" name="d"class="datepic"/>
+<select class="datepic" name="sub">  
+<option> ---Choose lecture--- </option>  
+<option> Data structure and algorithm  </option>  
+<option> Digital System </option>  
+<option> Mathematics </option>  
+<option> Values and ethics</option>  
+<option>Computer Organisation and Algorithm</option> 
+</select>
+</div>
+<table>
+  <caption class="head">Student List </caption>
+  <thead>
+    <tr>
+      <th>Student Roll NO</th>
+	   <th>status</th>
+    <tr>
+  </thead>
+  <tbody>
+    <tr>
+        <td><input type="text" name="rn[]" value="<?php echo $row['Rollno'];?>"/></td>
+        <td><input type="checkbox" name="id[]" value="<?php echo $row['Rollno'];?>"/></td>
+      </tr></tbody>
+    </table>
+    <input type="submit" class="submit" name="ins" />
+    
+    </form>
+</center>
+    </body>
+    </html>

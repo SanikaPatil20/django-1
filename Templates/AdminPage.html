@@ -1,0 +1,90 @@
+<html>
+<style>
+body
+{
+	background-image:url('https://wallpapercave.com/wp/wp4955575.jpg');
+	background-size:cover;
+	background-position: center;
+}
+.headerwelcome
+{
+	size:30px;
+	color:red;
+}
+.logo
+{
+	height:150px;
+	width:150px;
+} 
+.main
+{
+	background-image:url('backgroundimage.jpg');
+	height:230px;
+	width:100%;
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+.usernm
+{
+	margin-left:1400px;
+	margin-top:-20px;
+}
+.teacher 
+{
+	height:400px;
+	width:300px;
+	border: 5px outset red;
+	border-radius:50px;
+	margin-left:300px;
+	margin-top:100px;
+	float:left;
+	
+}
+.student 
+{
+	height:400px;
+	width:300px;
+	border: 5px outset red;
+	border-radius:50px;
+	margin-right: 300px;
+	float:right;
+	margin-top:100px;
+}
+.btn1
+{
+	color: red ;
+	font-style:bold;
+	margin :0px 60px 0px 70px ;
+	width:150px;
+	height:30px;
+	background-color:#ff9999;
+	border:none;
+	border-radius:10px;
+	margin-top:20px;
+}
+.img1
+{
+	width:150px;
+	height:150px;
+	border-radius:30px;
+	margin:50px 75px;
+	
+}
+
+</style>
+<body>
+    {% include "Header.html" %}
+<form action="Adminpart2.php" method="post" class="myform">  
+<div class="teacher">
+	<img src="https://cdn0.iconfinder.com/data/icons/back-to-school/90/school-learn-study-teacher-teaching-512.png" class="img1">
+	</center ><input type="submit" class="btn1" name="AddTeacher" value="Add Teacher "/></center>
+	</center ><input type="submit" class="btn1" name="showTeacher" value="Show Teacher List"/></center>
+</div>
+<div class="student">
+	<img src="https://isobm2016congress.com/wp-content/uploads/2016/01/community-student-icon.png" class="img1">
+	</center ><input type="submit" class="btn1" name="AddStudent" value="Add Student"/> </center>
+	</center ><input type="submit" class="btn1" name="showStudent" value="Show Student List"/></center>
+</div>
+</form>
+</body>
+</html>

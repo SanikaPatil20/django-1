@@ -1,0 +1,84 @@
+<html>
+<head>
+</head>
+<style>
+body
+{
+	background-image:url('https://wallpapercave.com/wp/wp4955575.jpg');
+	background-size:cover;
+	background-position: center;
+}
+.myform
+{
+	height:500px;
+	width:500px;
+	border:Solid;
+	border-radius:50px;
+	border-color:#c0c0c0;
+	background-color:#fb9393;
+	margin-top: 50px;
+}
+.myfield
+{
+		width: 300px; 
+		height:30px;
+        margin-top: 30px; 
+		margin-left:0px;
+        padding: 12px 20px;   
+        display: inline-block;   
+        border:none;
+		border-radius:10px;
+		
+}
+
+.header
+{
+		margin-top: 30px; 
+		color: white;
+}
+.headerwelcome
+{
+	size:30px;
+	color:red;
+}
+.logo
+{
+	height:150px;
+	width:150px;
+} 
+.btn1
+{
+    background-color: #703737;   
+        width: 200px;  
+        color: rgb(212, 214, 73);   
+        padding: 15px;   
+        margin: 10px 0px;   
+        border: none;   
+        border-radius:50px;
+        cursor: pointer;   
+}
+.btn1:hover
+{
+    opacity: 0.7;  
+    background-color: transparent;
+    border: solid;
+    border-color: #703737;
+    color:rgb(225, 53, 148);
+}
+
+</style>
+<body>
+    {% include "Header.html" %}
+<center>
+<form action="AddStudent.php" method="post" class="myform">
+<h1 class="header"> Add New Sudent  </h1>
+<input class="myfield" type="text" placeholder="Enter Student Roll no" name="sroll" required></br>
+<input class="myfield" type="text" placeholder="Enter Sudent Name" name="snm" required></br>
+<input class="myfield" type="text" placeholder="Enter Contact Number " name="scont" required></br>
+<input class="myfield" type="password" placeholder="Enter Password " name="spass" required></br>
+<input class="myfield" type="password" placeholder="Confirm Password" name="scpass" required></br>
+<input type="Submit" name="btn" class="btn1" value="Register Student"></br> 
+</form>
+</center>
+</body>
+</html> 

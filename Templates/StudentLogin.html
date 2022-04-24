@@ -1,0 +1,96 @@
+
+<!DOCTYPE html> 
+{% include "Header.html" %}  
+<html>   
+<head>  
+<meta name="viewport" content="width=device-width, initial-scale=1">  
+<title> Login Page </title>  
+<style>   
+body
+{
+	background-image:url('https://wallpapercave.com/wp/wp4955575.jpg');
+	background-size:cover;
+	background-position: center;
+} 
+.button1
+ {   
+        background-color: #703737;   
+        width: 200px;  
+        color: rgb(212, 214, 73);   
+        padding: 15px;   
+        margin-left:50px;  
+        margin-top: 30px;
+        border: none;   
+        border-radius:50px;
+        cursor: pointer;   
+         
+}    
+ input[type=text], input[type=password]
+ {   
+        width: 100%;   
+        margin: 8px 0;  
+        padding: 12px 20px;   
+        display: inline-block;   
+        border: none;   
+        box-sizing: border-box;   
+        border-radius: 20px;
+  }  
+ .button1:hover
+ {   
+        opacity: 0.7;  
+        background-color: transparent;
+        border: solid;
+        border-color: #703737;
+        color:rgb(225, 53, 148); 
+ }   
+  .cancelbtn {   
+        width: auto;   
+        padding: 10px 18px;  
+        margin: 10px 5px;  
+    }   
+        
+     
+ .container 
+{   
+    padding: 25px;   
+    background-color: pink;
+	height:350px;
+	width:300px;  
+	border:nne;
+	border-radius:30px;
+	margin-left:500px;
+} 
+.header1
+{
+	size:30px;
+	color:red;
+} 
+.head
+{
+	margin-left:500px;
+}
+.logo
+{
+	height:100px;
+	width:100px;
+	margin-left:0px;
+	border:solid;
+	border-color:#ff8080;
+	border-radius:50px;
+}
+</style>   
+</head>    
+<body>    
+    <center> <h1 class="head"> Student Login </h1> </center>   
+    <form action="Studentpage.php" method="post" class="myform">  
+        <div class="container">   
+		 <center> <img src="https://isobm2016congress.com/wp-content/uploads/2016/01/community-student-icon.png" class="logo" ></br> </center> 
+            <label>Username : </label>   
+            <input type="text" placeholder="Enter Username" name="username" required>  
+            <label>Password : </label>   
+            <input type="password" placeholder="Enter Password" name="password" required>  
+            <button type="submit" name="login" class="button1">Login</button>    
+        </div>   
+    </form>     
+</body>     
+</html> 

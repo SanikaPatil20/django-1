@@ -1,0 +1,73 @@
+{% include "Header.html" %}
+<!Doctype html>
+<html>
+<style>
+body
+{
+	background-image:url('https://wallpapercave.com/wp/wp4955575.jpg');
+	background-size:cover;
+	background-position: center;
+}
+.RegisterTeacher
+{
+	  background-color: #ff4d4d;   
+        width: 200px;  
+        color: white;   
+        padding: 15px;   
+        margin-top: 30px; 
+        border : none;
+		border-radius:10px;		
+}
+.myform
+{
+	height:600px;
+	width:500px;
+	border:Solid;
+	border-radius:50px;
+	border-color:#c0c0c0;
+	background-color:#fb9393;
+	margin-top: 10px;
+}
+.myfield
+{
+		width: 300px; 
+		height:30px;
+        margin-top: 30px; 
+		margin-left:0px;
+        padding: 12px 20px;   
+        display: inline-block;   
+        border:none;
+		border-radius:10px;
+		
+}
+
+.header
+{
+		margin-top: 30px; 
+		color: white;
+}
+.headerwelcome
+{
+	size:30px;
+	color:red;
+}
+.logo
+{
+	height:150px;
+	width:150px;
+} 
+</style>
+<body>
+<center>
+<form action="AddTeacher.php" method="post" class="myform">
+<h1 class="header"> Register Teacher </h1>
+<input class="myfield" type="text" placeholder="Enter Teacher Id" name="tid" required></br>
+<input class="myfield" type="text" placeholder="Enter Teacher Name" name="tnm" required></br>
+<input class="myfield" type="text" placeholder="Enter Contact Number " name="tcont" required></br>
+<input class="myfield" type="password" placeholder="Enter Password " name="tpass" required></br>
+<input class="myfield" type="password" placeholder="Confirm Password" name="tcpass" required></br>
+<input type="Submit" name="btn" class="RegisterTeacher" value="Register Teacher" action="register"></br> 
+</form>
+</center>
+</body>
+</html> 

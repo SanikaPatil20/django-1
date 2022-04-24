@@ -1,0 +1,88 @@
+<!doctype html>
+<head>
+</head>
+<style>
+body
+{
+	background-image:url('https://wallpapercave.com/wp/wp4955575.jpg');
+	background-size:cover;
+	background-position: center;
+}
+.Admin
+{
+	height:300px;
+	width:300px;
+	border: 5px outset red;
+	border-radius:50px;
+	margin-left:200px;
+	margin-top: 100px;
+	
+}
+.teacher 
+{
+	height:300px;
+	width:300px;
+	border: 5px outset red;
+	border-radius:50px;
+	margin-left:550px;
+	margin-top:-310px;
+	float:left;
+	
+}
+.student 
+{
+	height:300px;
+	width:300px;
+	border: 5px outset red;
+	border-radius:50px;
+	margin-right: 300px;
+	float:right;
+	margin-top:-310px;
+}
+.btn1
+{
+	color: red ;
+	font-style:bold;
+	margin :0px 60px 0px 70px ;
+	width:150px;
+	height:30px;
+	background-color:#ff9999;
+	border:none;
+	border-radius:10px;
+}
+.btn1:hover
+{
+
+        background-color:transparent;  
+        border: solid;
+        border-color: rgb(188, 46, 77);
+}
+.img1
+{
+	width:150px;
+	height:150px;
+	border-radius:30px;
+	margin:50px 75px;
+	
+}
+
+
+</style>
+<body>
+	{% include "Header.html" %}
+ <form action="homepage.php" method="post"> 
+<div class="Admin">
+	<img src="https://th.bing.com/th/id/R.12e0d31d0c57d1bc724ecdb1700607f0?rik=HSOCjcfIMPpceA&riu=http%3a%2f%2ffindicons.com%2ffiles%2ficons%2f977%2frrze%2f720%2fuser_admin.png&ehk=NqATmpwKJiX6Q8PdvkG%2bPwPqeT3u5Ynwd%2fRbEMMqD7s%3d&risl=&pid=ImgRaw&r=0" class="img1">
+	</center ><button type="submit" class="btn1" name="ad">Login As Admin  </button></center>
+</div>
+<div class="teacher">
+	<img src="https://th.bing.com/th/id/R.c0a35323a90c2151bee71afcdca7eab9?rik=de3QeR2FDCNCbQ&riu=http%3a%2f%2ficons.iconarchive.com%2ficons%2faha-soft%2ffree-large-boss%2f512%2fTeacher-icon.png&ehk=wc44exiZ096LkoLq8ULH%2bWakl%2fNNRESbQT33MrpRRzc%3d&risl=&pid=ImgRaw&r=0" class="img1">
+	</center ><button type="submit" class="btn1" name="ta">Login As Teacher </a></center>
+</div>
+<div class="student">
+	<img src="https://isobm2016congress.com/wp-content/uploads/2016/01/community-student-icon.png" class="img1">
+	</center ><button type="submit" class="btn1" name="st">Login As Student </button></center>
+</div>
+</form>
+</body>
+</html>

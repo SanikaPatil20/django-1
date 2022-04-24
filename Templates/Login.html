@@ -1,0 +1,89 @@
+<!DOCTYPE html>   
+<html>   
+<head>  
+<meta name="viewport" content="width=device-width, initial-scale=1">  
+<title> Login Page </title>  
+{% include "Header.html" %}
+<style>   
+body
+{
+	background-image:url('https://wallpapercave.com/wp/wp4955575.jpg');
+	background-size:cover;
+	background-position: center;
+}
+.button1
+ {   
+        background-color: #703737;   
+        width: 200px;  
+        color: rgb(212, 214, 73);   
+        padding: 15px;   
+        margin: 10px 0px;   
+        border: none;   
+        border-radius:50px;
+        cursor: pointer;   
+         
+}    
+ input[type=text], input[type=password]
+ {   
+        width: 100%;   
+        margin: 8px 0;  
+        padding: 12px 20px;   
+        display: inline-block;   
+        border: none;   
+        box-sizing: border-box;   
+        border-radius: 20px;
+  }  
+ .button1:hover
+ {   
+        opacity: 0.7;  
+        background-color: transparent;
+        border: solid;
+        border-color: #703737;
+        color:rgb(225, 53, 148); 
+ }   
+  .cancelbtn {   
+        width: auto;   
+        padding: 10px 18px;  
+        margin: 10px 5px;  
+    }   
+        
+     
+ .container 
+{   
+    padding: 25px;   
+    background-color: rgb(243, 158, 196);
+	height:300px;
+	width:300px;  
+	border:none;
+	border-radius:30px;
+	margin-left:300px;
+}   
+.head
+{
+	margin-left:500px;
+}
+.logo
+{
+	height:100px;
+	width:100px;
+	margin-left:0px;
+	border:solid;
+	border-color:#ff8080;
+	border-radius:50px;
+}
+</style>   
+</head>    
+<body>    
+    
+     <center>  <h1 class="head"> Admin Login </h1>  
+    <form action="Adminpage.php" method="post" class="myform">  
+        <div class="container">   
+		 <img src="https://th.bing.com/th/id/OIP.fMZwCAaBPntZ1NmSRhU6MQHaHa?pid=ImgDet&rs=1" class="logo" ></br> 
+        
+            <input type="text" placeholder="Enter Username" name="username" required>    
+            <input type="password" placeholder="Enter Password" name="password" required>  
+            <button type="submit" name="alog"class="button1">Login</button>   
+        </div>   
+    </form>     </center> 
+</body>     
+</html> 
